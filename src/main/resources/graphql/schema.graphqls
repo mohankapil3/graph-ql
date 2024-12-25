@@ -1,16 +1,21 @@
+scalar BigDecimal
+scalar Date
+
 type Query {
-    bookById(id: ID): Book
+    priceByDate(params: QueryParams!): [Price]
 }
 
-type Book {
-    id: ID
-    name: String
-    pageCount: Int
-    author: Author
+input QueryParams {
+    ticker: String!
+    start: Date!
+    end: Date!
 }
 
-type Author {
-    id: ID
-    firstName: String
-    lastName: String
+type Price {
+    date: Date
+    open: BigDecimal
+    high: BigDecimal
+    low: BigDecimal
+    close: BigDecimal
+    volume: Int
 }
