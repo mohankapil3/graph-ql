@@ -11,16 +11,16 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SecurityRepositoryTest {
 
+    private final SecurityRepository repository = new SecurityRepository();
+
     @Test
     public void getAllPrices() {
-        SecurityRepository repository = new SecurityRepository();
         List<Price> allPrices = repository.getAllPrices();
         assertEquals(2515, allPrices.size());
     }
 
     @Test
     public void getPrices() {
-        SecurityRepository repository = new SecurityRepository();
         LocalDate date = LocalDate.of(2024, 7, 8);
         List<Price> allPrices = repository.getPrices("MSFT", date, date);
         assertEquals(1, allPrices.size());

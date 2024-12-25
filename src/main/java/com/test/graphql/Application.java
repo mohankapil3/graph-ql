@@ -18,4 +18,9 @@ public class Application {
 		return wiringBuilder -> wiringBuilder.scalar(ExtendedScalars.GraphQLBigDecimal)
 				.scalar(ExtendedScalars.Date);
 	}
+
+	@Bean
+	public SecurityRepository securityRepository() {
+		return new SecurityRepository();
+	}
 }
