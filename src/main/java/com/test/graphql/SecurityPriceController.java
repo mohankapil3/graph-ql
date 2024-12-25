@@ -11,10 +11,7 @@ import java.util.List;
 
 @Controller
 public class SecurityPriceController {
-//    @QueryMapping
-//    public List<Price> priceByDate(@Argument QueryParams param) {
-//        return List.of();
-//    }
+
     @QueryMapping
     public List<Price> priceByDate(@Argument QueryParams params) {
         return List.of(new Price(
