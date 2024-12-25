@@ -24,7 +24,7 @@ class SecurityRepositoryTest {
         LocalDate date = LocalDate.of(2024, 7, 8);
         List<Price> allPrices = repository.getPrices("MSFT", date, date);
         assertEquals(1, allPrices.size());
-        Price actual = allPrices.get(0);
+        Price actual = allPrices.getFirst();
         assertEquals(date, actual.date());
         assertEquals(new BigDecimal("466.54998779296875"), actual.open());
         assertEquals(new BigDecimal("467.70001220703125"), actual.high());
