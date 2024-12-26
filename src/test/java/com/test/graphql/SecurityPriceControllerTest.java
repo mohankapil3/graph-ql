@@ -15,10 +15,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
 @AutoConfigureGraphQlTester
-class SecurityPriceControllerTest {
+public class SecurityPriceControllerTest {
 
-    @Autowired
-    private GraphQlTester graphQlTester;
+    private final GraphQlTester graphQlTester;
+
+    public SecurityPriceControllerTest(@Autowired GraphQlTester graphQlTester) {
+        this.graphQlTester = graphQlTester;
+    }
 
     @Test
     public void shouldGetPriceByDate() {

@@ -9,7 +9,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class SecurityRepositoryTest {
+public class SecurityRepositoryTest {
 
     private final SecurityRepository repository = new SecurityRepository();
 
