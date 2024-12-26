@@ -1,0 +1,21 @@
+scalar BigDecimal
+scalar Date
+
+type Query {
+    priceByDate(params: QueryParams!): [Price]
+}
+
+input QueryParams {
+    ticker: String!
+    start: Date!
+    end: Date!
+}
+
+type Price {
+    date: Date
+    open: BigDecimal
+    high: BigDecimal
+    low: BigDecimal
+    close: BigDecimal
+    volume: Int
+}
