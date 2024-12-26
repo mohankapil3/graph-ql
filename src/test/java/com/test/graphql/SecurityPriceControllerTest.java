@@ -3,7 +3,8 @@ package com.test.graphql;
 import com.test.graphql.domain.Price;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.graphql.GraphQlTest;
+import org.springframework.boot.test.autoconfigure.graphql.tester.AutoConfigureGraphQlTester;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.graphql.test.tester.GraphQlTester;
 
 import java.math.BigDecimal;
@@ -12,14 +13,15 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@GraphQlTest(SecurityPriceController.class)
+@SpringBootTest
+@AutoConfigureGraphQlTester
 class SecurityPriceControllerTest {
 
     @Autowired
     private GraphQlTester graphQlTester;
 
     @Test
-    void shouldGetPriceByDate() {
+    public void shouldGetPriceByDate() {
         String query = "{ priceByDate(params: { ticker: \"security-1\" start: \"2024-07-08\" end: \"2024-07-08\" }) { date open volume } }";
         this.graphQlTester
                 .document(query)
@@ -35,7 +37,7 @@ class SecurityPriceControllerTest {
     }
 
     @Test
-    void shouldGetPriceByDateAsType() {
+    public void shouldGetPriceByDateAsType() {
         String query = "{ priceByDate(params: { ticker: \"security-1\" start: \"2024-07-08\" end: \"2024-07-08\" }) { date open volume } }";
         List<Price> prices = this.graphQlTester
                 .document(query)
