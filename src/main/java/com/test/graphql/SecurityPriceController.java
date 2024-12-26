@@ -19,6 +19,7 @@ public class SecurityPriceController {
     }
 
     @QueryMapping
+    @SuppressWarnings("UnusedReturnValue")
     public List<Price> priceByDate(@Argument QueryParams params) {
         return repository.getPrices(Ticker.valueOf(params.ticker()), params.start(), params.end());
     }
