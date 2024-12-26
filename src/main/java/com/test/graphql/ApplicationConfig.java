@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.graphql.execution.RuntimeWiringConfigurer;
 
 @Configuration
+@SuppressWarnings("unused")
 public class ApplicationConfig {
 
     @Bean
