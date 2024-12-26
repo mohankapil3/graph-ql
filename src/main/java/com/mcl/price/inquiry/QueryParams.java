@@ -1,4 +1,4 @@
-package com.test.graphql;
+package com.mcl.price.inquiry;
 
 import java.time.LocalDate;
 

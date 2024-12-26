@@ -1,6 +1,6 @@
-package com.test.graphql;
+package com.mcl.price.inquiry;
 
-import com.test.graphql.domain.Price;
+import com.mcl.price.inquiry.domain.Price;
 
 import java.io.IOException;
 import java.math.BigDecimal;

@@ -1,13 +1,13 @@
-package com.test.graphql;
+package com.mcl.price.inquiry;
 
-import com.test.graphql.domain.Price;
+import com.mcl.price.inquiry.domain.Price;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-import static com.test.graphql.domain.Ticker.MSFT;
+import static com.mcl.price.inquiry.domain.Ticker.MSFT;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

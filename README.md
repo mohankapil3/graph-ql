@@ -1,3 +1,5 @@
-# graph-ql
+# price-inquiry
 
-Toy project to build and play with a graph-ql API
+Toy project to play with [GraphQL](https://graphql.org/).
+
+It uses a static file to hold historical security prices, and provides an API to query them.  

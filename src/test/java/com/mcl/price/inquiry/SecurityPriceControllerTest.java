@@ -1,6 +1,6 @@
-package com.test.graphql;
+package com.mcl.price.inquiry;
 
-import com.test.graphql.domain.Price;
+import com.mcl.price.inquiry.domain.Price;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.graphql.tester.AutoConfigureGraphQlTester;

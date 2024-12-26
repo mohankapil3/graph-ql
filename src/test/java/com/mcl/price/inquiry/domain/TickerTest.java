@@ -1,9 +1,9 @@
-package com.test.graphql.domain;
+package com.mcl.price.inquiry.domain;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static com.test.graphql.domain.Ticker.MSFT;
+import static com.mcl.price.inquiry.domain.Ticker.MSFT;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class TickerTest {

@@ -1,7 +1,7 @@
-package com.test.graphql;
+package com.mcl.price.inquiry;
 
-import com.test.graphql.domain.Price;
-import com.test.graphql.domain.Ticker;
+import com.mcl.price.inquiry.domain.Price;
+import com.mcl.price.inquiry.domain.Ticker;
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import static com.test.graphql.domain.Ticker.MSFT;
+import static com.mcl.price.inquiry.domain.Ticker.MSFT;
 
 @Repository
 public class SecurityPriceRepository {

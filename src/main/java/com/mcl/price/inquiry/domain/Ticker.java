@@ -1,4 +1,4 @@
-package com.test.graphql.domain;
+package com.mcl.price.inquiry.domain;
 
 import java.util.Objects;
 

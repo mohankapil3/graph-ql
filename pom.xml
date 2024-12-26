@@ -7,8 +7,8 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.3.7</version>
     </parent>
-    <groupId>com.test</groupId>
-    <artifactId>graph-ql</artifactId>
+    <groupId>com.mcl</groupId>
+    <artifactId>price-inquiry</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

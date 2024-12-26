@@ -1,4 +1,4 @@
-package com.test.graphql;
+package com.mcl.price.inquiry;
 
 import graphql.scalars.ExtendedScalars;
 import org.springframework.context.annotation.Bean;
