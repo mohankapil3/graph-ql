@@ -1,6 +1,6 @@
 # price-inquiry
 
-![PriceInquiry CI](https://github.com/mohankapil3/price-inquiry/workflows/PriceInquiry%20CI/badge.svg)
+![PriceInquiry CI](https://github.com/mohankapil3/price-inquiry/workflows/PriceInquiry%20CI/badge.svg?branch=master)
 
 Toy project to play with [GraphQL](https://graphql.org/).
 
