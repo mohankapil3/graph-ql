@@ -1,6 +1,7 @@
 package com.test.graphql;
 
 import com.test.graphql.domain.Price;
+import com.test.graphql.domain.Ticker;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import java.util.List;
 
 @Controller
+@SuppressWarnings("unused")
 public class SecurityPriceController {
 
     private final SecurityRepository repository;
@@ -18,6 +20,6 @@ public class SecurityPriceController {
 
     @QueryMapping
     public List<Price> priceByDate(@Argument QueryParams params) {
-        return repository.getPrices(params.ticker(), params.start(), params.end());
+        return repository.getPrices(Ticker.valueOf(params.ticker()), params.start(), params.end());
     }
 }
