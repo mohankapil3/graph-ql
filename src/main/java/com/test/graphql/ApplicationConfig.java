@@ -16,7 +16,7 @@ public class ApplicationConfig {
     }
 
     @Bean
-    public SecurityRepository securityRepository() {
-        return new SecurityRepository();
+    public SecurityPriceRepository securityPriceRepository() {
+        return new SecurityPriceRepository(new SecurityPriceFileParser());
     }
 }

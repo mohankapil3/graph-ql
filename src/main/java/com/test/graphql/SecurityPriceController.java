@@ -12,15 +12,15 @@ import java.util.List;
 @SuppressWarnings("unused")
 public class SecurityPriceController {
 
-    private final SecurityRepository repository;
+    private final SecurityPriceRepository repository;
 
-    public SecurityPriceController(SecurityRepository repository) {
+    public SecurityPriceController(SecurityPriceRepository repository) {
         this.repository = repository;
     }
 
     @QueryMapping
     @SuppressWarnings("UnusedReturnValue")
     public List<Price> priceByDate(@Argument QueryParams params) {
-        return repository.getPrices(Ticker.valueOf(params.ticker()), params.start(), params.end());
+        return repository.getPrices(Ticker.fromString(params.ticker()), params.start(), params.end());
     }
 }
