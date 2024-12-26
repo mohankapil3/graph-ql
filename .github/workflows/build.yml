@@ -20,5 +20,4 @@ jobs:
           java-version: 21
 
       - name: Build server components with Maven
-        working-directory: server
-        run: mvn --batch-mode test --file price-inquiry/pom.xml
+        run: mvn --batch-mode test --file pom.xml
